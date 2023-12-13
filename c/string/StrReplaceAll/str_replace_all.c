@@ -11,6 +11,7 @@
 /// @param old 被替换的字符串
 /// @param new 用于替换的字符串
 /// @return 替换后的字符串
+/// @warning 返回内容存放在函数内部动态申请的空间，因此需要在调用本函数后自行释放空间。
 char * StrReplaceAll(char *raw, char *old, char *new) {
   int raw_len = strlen(raw); // 原始字符串长度
   int old_len = strlen(old); // 被替换的字符串长度
@@ -26,7 +27,6 @@ char * StrReplaceAll(char *raw, char *old, char *new) {
   for (int i = 0; i < raw_len; i++) {
     // 匹配要被替换的字符串
     str1 = strstr(str1, old);
-    // printf("str1 = %s\n", str1);
     // 如果没有找到匹配内容，就进行收尾处理
     if (str1 == NULL) {
       // 把剩下的内容全部追加到ret
@@ -38,10 +38,9 @@ char * StrReplaceAll(char *raw, char *old, char *new) {
     strncat(ret, str2, copy_len);
     // 把用于替换的字符追加到ret
     strncat(ret, new, new_len);
-    // printf("ret = %s\n", ret);
     // 跳过要被替换的字符串
     str1 += old_len;
     str2 = str1;
   }
-  return NULL;
+  return ret;
 }

@@ -14,16 +14,14 @@
 
 static void StrReplaceAllTest(void **state) {
   char *str1 = NULL;
-  char *str2 = NULL;
-  str1 = StrReplaceAll("ffabcffghjff", "ff", "f");
-  str2 = StrReplaceAll("abcghjf", "ff", "f");
-  //printf("%s\n", str1);
-  if (str1 != NULL && str2 != NULL) {
-    assert_string_equal(str1, "fabcfghjf");
-    assert_string_equal(str2, "abcghjf");
+  char *test[] = {"ffabcffghjff", "abcghjff", ""};
+  char *result[] = {"iiiabciiighjiii", "abcghjiii", ""};
+  for (int i = 0; i < 3; i++) {
+    str1 = StrReplaceAll(test[i], "ff", "iii");
+    assert_string_equal(str1, result[i]);
+    free(str1);
+    str1 = NULL;
   }
-  free(str1);
-  free(str2);
   
   return;
 }

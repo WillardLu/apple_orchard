@@ -7,7 +7,6 @@
 #ifndef StrReplaceAll_str_replace_all_h_
 #define StrReplaceAll_str_replace_all_h_
 
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
