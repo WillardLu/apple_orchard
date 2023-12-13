@@ -3,6 +3,8 @@
 // Use of this source code is governed by an MIT-style
 // license that can be found in the LICENSE file or at
 // https://opensource.org/licenses/MIT.
+//
+// @version 1.0.0
 
 #include "str_replace_all.h"
 
@@ -20,6 +22,10 @@ char * StrReplaceAll(char *raw, char *old, char *new) {
   int max_len = (new_len > old_len ? new_len / old_len + 1 : 1) * raw_len + 1;
   // 定义并分配空间给替换后的字符串
   char *ret = (char *)calloc(max_len, sizeof(char));
+  if (ret == NULL) {
+    printf("StrReplaceAll(): memory allocation failed!\n");
+    return NULL;
+  }
   char *str1 = raw;  // 用于字符串的中转
   char *str2 = raw;  // 用于字符串的中转
   int copy_len = 0;  // 用于保存复制字符串的长度
