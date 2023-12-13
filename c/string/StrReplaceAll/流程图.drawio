@@ -1,0 +1,144 @@
+<mxfile host="Electron" modified="2023-12-13T04:13:01.171Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="WiGqggovUoxmJQeKv5Vm" version="22.1.2" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="806" dy="504" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="fk349b4Uj1VeucFDufq2-0" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="230" y="70" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fk349b4Uj1VeucFDufq2-1" value="计算替换后的字符串可&lt;br&gt;能达到的最大长度并分&lt;br&gt;配相应空间给 new_str" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="211" y="250" width="138" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fk349b4Uj1VeucFDufq2-3" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="fk349b4Uj1VeucFDufq2-0" target="ql-w0xa51KWZOx_JPtbp-0" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="200" as="sourcePoint" />
+            <mxPoint x="440" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fk349b4Uj1VeucFDufq2-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="fk349b4Uj1VeucFDufq2-1" target="ql-w0xa51KWZOx_JPtbp-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="248" y="366" as="sourcePoint" />
+            <mxPoint x="248" y="396" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fk349b4Uj1VeucFDufq2-10" value="有匹配到&lt;br&gt;内容吗？" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="230" y="520" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="fk349b4Uj1VeucFDufq2-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="fk349b4Uj1VeucFDufq2-10" edge="1" target="ql-w0xa51KWZOx_JPtbp-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="730" y="470" as="sourcePoint" />
+            <mxPoint x="470" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fk349b4Uj1VeucFDufq2-13" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="fk349b4Uj1VeucFDufq2-12" vertex="1" connectable="0">
+          <mxGeometry x="-0.2833" relative="1" as="geometry">
+            <mxPoint x="13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ql-w0xa51KWZOx_JPtbp-0" value="计算原字符串、被替换&lt;br&gt;字符串、用于替换的字&lt;br&gt;符串的长度。" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="212" y="160" width="136" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ql-w0xa51KWZOx_JPtbp-1" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ql-w0xa51KWZOx_JPtbp-0" target="fk349b4Uj1VeucFDufq2-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="312" y="140" as="sourcePoint" />
+            <mxPoint x="312" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ql-w0xa51KWZOx_JPtbp-2" value="定义用于确定字符串中&lt;br&gt;关键位置的游标变量&lt;br&gt;cursor1和cursor2" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="211" y="340" width="138" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ql-w0xa51KWZOx_JPtbp-3" value="获取第一项匹配到被替&lt;br&gt;换字符串的字符串（即&lt;br&gt;strstr()函数）" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="211" y="430" width="138" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ql-w0xa51KWZOx_JPtbp-4" value="通过上一步匹配结果计&lt;br&gt;算出cursor2的值" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="211" y="630" width="138" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ql-w0xa51KWZOx_JPtbp-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ql-w0xa51KWZOx_JPtbp-2" target="ql-w0xa51KWZOx_JPtbp-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="315" y="394" as="sourcePoint" />
+            <mxPoint x="315" y="424" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ql-w0xa51KWZOx_JPtbp-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ql-w0xa51KWZOx_JPtbp-3" target="fk349b4Uj1VeucFDufq2-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="307" y="502" as="sourcePoint" />
+            <mxPoint x="300" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ql-w0xa51KWZOx_JPtbp-7" value="按照cursor1和cursor2&lt;br&gt;从str原字符串复制字&lt;br&gt;符追加到new_str" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="211" y="700" width="138" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ql-w0xa51KWZOx_JPtbp-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ql-w0xa51KWZOx_JPtbp-4" target="ql-w0xa51KWZOx_JPtbp-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="680" as="sourcePoint" />
+            <mxPoint x="290" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ql-w0xa51KWZOx_JPtbp-9" value="追加新字符串到new_str" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="211" y="780" width="138" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ql-w0xa51KWZOx_JPtbp-10" value="通过cursor1把str中的&lt;br&gt;剩余内容全部追加到&lt;br&gt;new_str" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="381" y="630" width="138" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ql-w0xa51KWZOx_JPtbp-11" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="fk349b4Uj1VeucFDufq2-10" target="ql-w0xa51KWZOx_JPtbp-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="441" y="600" as="sourcePoint" />
+            <mxPoint x="511" y="560" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="450" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ql-w0xa51KWZOx_JPtbp-12" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ql-w0xa51KWZOx_JPtbp-11">
+          <mxGeometry x="-0.7168" y="1" relative="1" as="geometry">
+            <mxPoint y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ql-w0xa51KWZOx_JPtbp-13" value="cursor1 = cursor2 + old_len;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="211" y="850" width="138" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ql-w0xa51KWZOx_JPtbp-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ql-w0xa51KWZOx_JPtbp-7" target="ql-w0xa51KWZOx_JPtbp-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="297" y="757" as="sourcePoint" />
+            <mxPoint x="297" y="787" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ql-w0xa51KWZOx_JPtbp-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ql-w0xa51KWZOx_JPtbp-9" target="ql-w0xa51KWZOx_JPtbp-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="835" as="sourcePoint" />
+            <mxPoint x="300" y="865" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ql-w0xa51KWZOx_JPtbp-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ql-w0xa51KWZOx_JPtbp-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="840" as="sourcePoint" />
+            <mxPoint x="280" y="420" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="160" y="875" />
+              <mxPoint x="160" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ql-w0xa51KWZOx_JPtbp-17" value="End" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="400" y="780" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ql-w0xa51KWZOx_JPtbp-18" value="return new_str" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="381" y="710" width="138" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ql-w0xa51KWZOx_JPtbp-21" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ql-w0xa51KWZOx_JPtbp-10" target="ql-w0xa51KWZOx_JPtbp-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="680" as="sourcePoint" />
+            <mxPoint x="290" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ql-w0xa51KWZOx_JPtbp-22" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ql-w0xa51KWZOx_JPtbp-18" target="ql-w0xa51KWZOx_JPtbp-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="486" y="690" as="sourcePoint" />
+            <mxPoint x="486" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

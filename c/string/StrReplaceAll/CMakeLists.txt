@@ -11,7 +11,8 @@ set(project_name StrReplaceAll)
 
 # 设置可执行文件的生成
 add_executable(${project_name}
-               main.c)
+               main.c
+               str_replace_all.c)
 
 target_link_libraries(${project_name}
                       cmocka)
