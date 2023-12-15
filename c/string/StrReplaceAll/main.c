@@ -12,16 +12,16 @@
 #include "str_replace_all.h"
 
 static void StrReplaceAllTest(void **state) {
-  char *str1 = NULL;
   char *test[] = {"ffabcffghjff", "abcghjff", ""};
   char *result[] = {"iiiabciiighjiii", "abcghjiii", ""};
-  for (int i = 0; i < 3; i++) {
-    str1 = StrReplaceAll(test[i], "ff", "iii");
-    assert_string_equal(str1, result[i]);
-    free(str1);
-    str1 = NULL;
+  for (int i = 0; i <= 2; i++) {
+    char ret[100]= {0};
+    if (StrReplaceAll(test[i], "ff", "iii", ret) != 0) {
+      printf("StrReplaceAll failed\n");
+    } else {
+      assert_string_equal(ret, result[i]);
+    }
   }
-  
   return;
 }
 

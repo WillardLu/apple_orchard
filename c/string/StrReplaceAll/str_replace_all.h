@@ -13,6 +13,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-char * StrReplaceAll(char *str, char *old, char *new);
+int StrReplaceAll(char *str, char *old, char *new, char *ret);
 
 #endif  // StrReplaceAll_str_replace_all_h_
