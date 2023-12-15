@@ -85,54 +85,54 @@ cmocka提供的断言函数有：
 - 布尔型
 
 ```c
-assert_true(x)
-assert_false(x)
+assert_true(x);
+assert_false(x);
 ```
 
 - 整型
 
 ```c
-assert_int_equal(a, b)
-assert_int_not_equal(a, b)
+assert_int_equal(a, b);
+assert_int_not_equal(a, b);
 ```
 
 - 整形范围
 
 ```c
-assert_in_range(value, minimum, maximum)
-assert_not_in_range(value, minimum, maximum)
+assert_in_range(value, minimum, maximum);
+assert_not_in_range(value, minimum, maximum);
 ```
 
 - 浮点型
 
 ```c
-assert_float_equal(a, b)
-assert_float_not_equal(a, b)
+assert_float_equal(a, b);
+assert_float_not_equal(a, b);
 ```
 
 - 指针
 
 ```c
-assert_non_null(x)
-assert_null(x)
+assert_non_null(x);
+assert_null(x);
 ```
 
 - 返回代码
 
 ```c
-assert_return_code(rc, errno)
+assert_return_code(rc, errno);
 ```
 
 - 字符串
 
 ```c
-assert_string_equal(a, b)
-assert_string_not_equal(a, b)
+assert_string_equal(a, b);
+assert_string_not_equal(a, b);
 ```
 
 - 内存比较
 
 ```c
-assert_memory_equal(a, b)
-assert_memory_not_equal(a, b)
+assert_memory_equal(a, b);
+assert_memory_not_equal(a, b);
 ```
