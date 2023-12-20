@@ -11,7 +11,8 @@
 
 #include "string.h"
 
-static void StrReplaceAllTest(void **state) {
+static void StringTest(void **state) {
+  // 测试StrReplaceAll函数
   char *test[] = {"ffabcffghjff", "abcghjff", ""};
   char *result[] = {"iiiabciiighjiii", "abcghjiii", ""};
   for (int i = 0; i <= 2; i++) {
@@ -22,6 +23,7 @@ static void StrReplaceAllTest(void **state) {
       assert_string_equal(ret, result[i]);
     }
   }
+  // 测试SubStr函数
   char substring[10] = {0};
   assert_int_equal(SubStr("abcdefgh", substring, 0, 5), 0);
   assert_int_equal(SubStr("abc", substring, 4, 5), -1);
@@ -32,7 +34,7 @@ static void StrReplaceAllTest(void **state) {
 
 int main(int argc, char *argv[]) {
   const struct CMUnitTest tests[] = {
-    cmocka_unit_test(StrReplaceAllTest),
+    cmocka_unit_test(StringTest),
   };
   return cmocka_run_group_tests(tests, NULL, NULL);
 }
