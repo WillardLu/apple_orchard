@@ -6,13 +6,14 @@
 //
 // @version 1.0.0
 
-#ifndef STRREPLACEALL_STR_REPLACE_ALL_H_
-#define STRREPLACEALL_STR_REPLACE_ALL_H_
+#ifndef STRING_STRING_H_
+#define STRING_STRING_H_
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
 int StrReplaceAll(char *str, char *old, char *new, char *ret);
+int SubStr(char *str, char *substr, int start, int end);
 
-#endif  // STRREPLACEALL_STR_REPLACE_ALL_H_
+#endif  // STRING_STRING_H_

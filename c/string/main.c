@@ -9,7 +9,7 @@
 #include <stddef.h>
 #include <cmocka.h>
 
-#include "str_replace_all.h"
+#include "string.h"
 
 static void StrReplaceAllTest(void **state) {
   char *test[] = {"ffabcffghjff", "abcghjff", ""};
@@ -22,6 +22,11 @@ static void StrReplaceAllTest(void **state) {
       assert_string_equal(ret, result[i]);
     }
   }
+  char substring[10] = {0};
+  assert_int_equal(SubStr("abcdefgh", substring, 0, 5), 0);
+  assert_int_equal(SubStr("abc", substring, 4, 5), -1);
+  assert_int_equal(SubStr("abc", substring, -4, 2), -1);
+  assert_int_equal(SubStr("abc234rwerewq", substring, 4, 2), -1);
   return;
 }
 
