@@ -9,7 +9,7 @@
 #include <stddef.h>
 #include <cmocka.h>
 
-#include "string.h"
+#include "apple_string.h"
 
 static void StringTest(void **state) {
   // 测试StrReplaceAll函数
