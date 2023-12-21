@@ -13,9 +13,10 @@ sudo apt install libcmocka-dev
 #### 2. C语言代码中的头文件编写
 
 ```c
-#include <setjmp.h>
 #include <stdarg.h>
 #include <stddef.h>
+#include <stdint.h>
+#include <setjmp.h>
 #include <cmocka.h>
 ```
 

@@ -4,8 +4,55 @@
 /// license that can be found in the LICENSE file or at
 /// https://opensource.org/licenses/MIT.
 
-#include "apple_string.h"
+#include "ao_string.h"
 
+/// @brief 复制字符串
+/// @param dest 目标字符串
+/// @param dest_size 目标字符串缓冲区大小
+/// @param src 源字符串
+/// @return 成功：0，失败：-1
+int AOStrCpy(char *dest, size_t dest_size, const char *src) {
+  if (dest == NULL || src == NULL) {
+    printf("AOStrCpy: Invalid argument.\n");
+    return -1;
+  }
+  if (strlen(src) > dest_size - 1) {
+    printf("AOStrCpy: Destination buffer is too small.\n");
+    return -1;
+  }
+  for (int i = 0; i < strlen(src); i++) {
+    dest[i] = src[i];
+  }
+  dest[strlen(src)] = '\0';
+  return 0;
+}
+
+/// @brief 连接字符串
+/// @param dest 目标字符串
+/// @param dest_size 目标字符串缓冲区大小
+/// @param left_src 左边的字符串
+/// @param right_src 右边的字符串
+/// @return 成功：0，失败：-1
+int AOStrCat(char *dest, size_t dest_size, const char *left_src,
+             const char *right_src) {
+  if (dest == NULL || left_src == NULL || right_src == NULL) {
+    printf("AOStrCat: Invalid argument.\n");
+    return -1;
+  }
+  if (strlen(left_src) + strlen(right_src) > dest_size - 1) {
+    printf("AOStrCat: Destination buffer is too small.\n");
+    return -1;
+  }
+  if (AOStrCpy(dest, dest_size, left_src) == -1) {
+    return -1;
+  }
+  if (AOStrCpy(dest + strlen(left_src), dest_size, right_src) == -1) {
+    return -1;
+  }
+  return 0;
+}
+
+/*
 /// @brief 替换所有指定字符
 /// @param raw 原始字符串
 /// @param old 被替换的字符串
@@ -45,6 +92,7 @@ int StrReplaceAll(char *raw, char *old, char *new, char *ret)
   return 0;
 }
 
+
 /// @brief 通过指定起始和结束位置（包含结束位置）提取子字符串
 /// @param str 原始字符串
 /// @param substr 提取的子字符串
@@ -66,3 +114,4 @@ int SubStr(char *str, char *substr, int start, int end)
   substr[end - start + 1] = '\0';
   return 0;
 }
+*/
