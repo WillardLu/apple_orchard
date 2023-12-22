@@ -4,8 +4,8 @@
 // license that can be found in the LICENSE file or at
 // https://opensource.org/licenses/MIT.
 
-#ifndef STRING_APPLE_STRING_H_
-#define STRING_APPLE_STRING_H_
+#ifndef AO_STRING_AO_STRING_H_
+#define AO_STRING_AO_STRING_H_
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -16,4 +16,4 @@ int AOStrCat(char *dest, size_t dest_size, const char *left_src, const char *rig
 // int StrReplaceAll(char *str, char *old, char *new, char *ret);
 // int SubStr(char *str, char *substr, int start, int end);
 
-#endif  // STRING_APPLE_STRING_H_
+#endif  // AO_STRING_AO_STRING_H_
